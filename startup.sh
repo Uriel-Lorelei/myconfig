@@ -67,6 +67,7 @@ cd ..
 yay -S bibata-cursor-theme-bin
 yay -S papirus-icon-theme
 yay -S papirus-folders
+yay -S librewolf-bin
 
 papirus-folders -C black
 
