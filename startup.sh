@@ -23,23 +23,20 @@ install_if_missing() {
 
 slow_echo "initializing the corruption process . . . . . . . . . . . . . . "
 
-install_if_missing mesa hyprland wayland xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk wl-clipboard kitty wofi waybar thunar swww nwg-look power-profiles-daemon mako nm-applet mpv feh code pipewire pipewire-pulse pipewire-alsa alsa-utils wireplumber pavucontrol brightnessctl ufw bluez bluez-utils blueman hyprlock ly
+install_if_missing mesa hyprland wayland xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk wl-clipboard kitty wofi waybar thunar swww nwg-look power-profiles-daemon mako network-manager-applet mpv feh code pipewire pipewire-pulse pipewire-alsa alsa-utils wireplumber pavucontrol brightnessctl ufw bluez bluez-utils blueman hyprlock ly
 
-sudo systemctl --user enable --now pipewire pipewire-pulse
-sudo systemctl enable networkmanager
 sudo systemctl enable ly
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
-makepkg -si --noconfirm
+makepkg -si
 cd ..
 
-git clone https://github.com/Uriel-Lorelei/myconfig.git
 cd myconfig
 
 mkdir -p "$HOME/Pictures/wallpaper"
 mv mountain.png "$HOME/Pictures/wallpaper"
-swww img ~/Pictures/wallpaper/mountain.png
+swww img "$HOME/myconfig/mountain.png"
 
 mkdir -p "$HOME/.config/waybar"
 mkdir -p "$HOME/.config/mako"
