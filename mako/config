@@ -1,0 +1,12 @@
+font=JetBrainsMono Nerd Font
+background-color=#ffc0cb
+text-color=#FF0000
+border-color=#db7093
+progress-color=#db7093
+border-size=3
+padding=10
+default-timeout=5000
+markup=true
+text-alignment=center
+layer=overlay
+anchor=top-right
