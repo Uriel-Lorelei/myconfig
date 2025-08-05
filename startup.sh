@@ -37,6 +37,10 @@ cd ..
 git clone https://github.com/Uriel-Lorelei/myconfig.git
 cd myconfig
 
+mkdir -p "$HOME/Pictures/wallpaper"
+mv mountain.png "$HOME/Pictures/wallpaper"
+swww img ~/Pictures/wallpaper/mountain.png
+
 mkdir -p "$HOME/.config/waybar"
 mkdir -p "$HOME/.config/mako"
 mkdir -p "$HOME/.config/kitty"
