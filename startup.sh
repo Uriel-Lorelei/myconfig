@@ -33,25 +33,23 @@ makepkg -si
 cd ..
 
 mkdir "Pictures"
-cd myconfig/
-mv mountain.png "~/Pictures"
+swww-daemon &
+swww img mountain.png
 cd ..
-swww img "Pictures/mountain"
-
-rm -rf "~/.config/waybar"
-rm -rf "~/.config/mako"
-rm -rf "~/.config/kitty"
-rm -rf "~/.config/nwg-look"
+cd .config
+rm waybar
+rm mako
+rm kitty
+rm hypr
+rm nwg-look
+cd ..
 
 cd myconfig/
-mv waybar/ "$HOME/.config/waybar"
-cp mako/ "$HOME/.config/mako"
-cp kitty/ "$HOME/.config/kitty"
-
-rm "~/.config/hypr/hyprland.conf"
-mv hypr/ "~/.config/hypr"
-
-mv nwg-look/ "~/.config/nwg-look"
+cp waybar/ "$HOME/.config/"
+cp mako/ "$HOME/.config/"
+cp kitty/ "$HOME/.config/"
+cp hypr/ "~/.config/"
+cp nwg-look/ "~/.config/"
 
 cd ..
 
