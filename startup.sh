@@ -32,28 +32,29 @@ cd yay
 makepkg -si
 cd ..
 
-mkdir -p "$HOME/Pictures"
+mkdir "Pictures"
 cd myconfig/
-mv mountain.png "$HOME/Pictures"
+mv mountain.png "~/Pictures"
 cd ..
 swww img "Pictures/mountain"
 
-rm -rf "$HOME/.config/waybar"
-rm -rf "$HOME/.config/mako"
-rm -rf "$HOME/.config/kitty"
-rm -rf "$HOME/.config/nwg-look"
+rm -rf "~/.config/waybar"
+rm -rf "~/.config/mako"
+rm -rf "~/.config/kitty"
+rm -rf "~/.config/nwg-look"
 
 cd myconfig/
 mv waybar/ "$HOME/.config/waybar"
 cp mako/ "$HOME/.config/mako"
 cp kitty/ "$HOME/.config/kitty"
 
-rm "$HOME/.config/hypr/hyprland.conf"
-mv hypr/ "$HOME/.config/hypr"
+rm "~/.config/hypr/hyprland.conf"
+mv hypr/ "~/.config/hypr"
 
-mv nwg-look/ "$HOME/.config/nwg-look"
+mv nwg-look/ "~/.config/nwg-look"
 
 cd ..
+
 
 sudo pacman -S ttf-jetbrains-mono-nerd
 
