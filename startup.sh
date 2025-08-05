@@ -32,8 +32,6 @@ cd yay
 makepkg -si
 cd ..
 
-cd myconfig
-
 mkdir -p "$HOME/Pictures/wallpaper"
 mv mountain.png "$HOME/Pictures/wallpaper"
 swww img "$HOME/myconfig/mountain.png"
@@ -56,7 +54,9 @@ cd "$HOME"
 
 git clone https://github.com/vinceliuice/Graphite-gtk-theme.git
 cd Graphite-gtk-theme
-./install.sh -c dark -s standard -s compact -l --tweaks black rimless 
+chmod +x install.sh
+install.sh -c dark -s standard -s compact -l --tweaks black rimless 
+rm install.sh
 
 cd "$HOME" 
 
