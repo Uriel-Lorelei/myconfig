@@ -53,7 +53,7 @@ fi
 slow_echo "Setting wallpaper..."
 swww img "$WALLPAPER" --transition-type center
 
-slow_echo "removing things that you may or may not need. either way i dont care"
+slow_echo ". . . now . . . removing things that you may or may not need. either way i dont care"
 rm -rf "$CONFIG_DIR/waybar" "$CONFIG_DIR/mako" "$CONFIG_DIR/kitty" "$CONFIG_DIR/hypr" "$CONFIG_DIR/nwg-look"
 
 echo "Copying new configs..."
@@ -62,6 +62,7 @@ cp -r "$MYCONFIG/mako" "$CONFIG_DIR/"
 cp -r "$MYCONFIG/kitty" "$CONFIG_DIR/"
 cp -r "$MYCONFIG/hypr" "$CONFIG_DIR/"
 cp -r "$MYCONFIG/nwg-look" "$CONFIG_DIR/"
+cp -r "$MYCONFIG/wofi" "$CONFIG_DIR/"
 
 slow_echo "replacement over"
 
