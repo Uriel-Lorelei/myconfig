@@ -23,7 +23,11 @@ install_if_missing() {
 
 slow_echo "initializing the corruption process . . . . . . . . . . . . . . "
 
-install_if_missing waybar thunar swww nwg-look
+install_if_missing mesa hyprland wayland xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk wl-clipboard kitty wofi waybar thunar swww nwg-look power-profiles-daemon mako nm-applet mpv feh code pipewire pipewire-pulse pipewire-alsa alsa-utils wireplumber pavucontrol brightnessctl ufw bluez bluez-utils blueman hyprlock ly
+
+sudo systemctl --user enable --now pipewire pipewire-pulse
+sudo systemctl enable networkmanager
+sudo systemctl enable ly
 
 git clone https://aur.archlinux.org/yay.git
 cd yay
@@ -55,10 +59,14 @@ cd Graphite-gtk-theme
 
 cd "$HOME" 
 
-yay -S bibata-cursor-theme
+yay -S bibata-cursor-theme-bin
+yay -S papirus-icon-theme
+yay -S papirus-folders
+
+papirus-folders -C black
+
+slow_echo "hahahaha this pc is mine now"
 
 install_if_missing zsh
 sudo chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-slow_echo "hahahaha this pc is mine now"
