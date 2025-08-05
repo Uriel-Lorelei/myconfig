@@ -28,7 +28,7 @@ install_if_missing mesa hyprland wayland base-devel wl-clip-persist wlogout tlp 
 cd
 
 MYCONFIG="$HOME/myconfig"
-WALLPAPER="$REPO_DIR/mountain.png"
+WALLPAPER="$MYCONFIG/mountain.png"
 CONFIG_DIR="$HOME/.config"
 
 if ! command -v yay &> /dev/null; then
