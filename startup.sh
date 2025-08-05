@@ -55,7 +55,6 @@ mv nwg-look/ "~/.config/nwg-look"
 
 cd ..
 
-
 sudo pacman -S ttf-jetbrains-mono-nerd
 
 git clone https://github.com/vinceliuice/Graphite-gtk-theme.git
