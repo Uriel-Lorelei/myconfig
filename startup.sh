@@ -55,7 +55,7 @@ cd "$HOME"
 git clone https://github.com/vinceliuice/Graphite-gtk-theme.git
 cd Graphite-gtk-theme
 chmod +x install.sh
-install.sh -c dark -s standard -s compact -l --tweaks black rimless 
+./install.sh -c dark -s standard -s compact -l --tweaks black rimless 
 rm install.sh
 
 cd "$HOME" 
