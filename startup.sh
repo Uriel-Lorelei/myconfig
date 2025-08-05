@@ -30,35 +30,39 @@ cd
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
-cd
+cd ..
 
-mkdir -p "$HOME/Pictures/wallpaper"
-mv mountain.png "$HOME/Pictures/wallpaper"
-swww img "$HOME/myconfig/mountain.png"
+mkdir -p "$HOME/Pictures"
+cd myconfig/
+mv mountain.png "$HOME/Pictures"
+cd ..
+swww img "Pictures/mountain"
 
-mkdir -p "$HOME/.config/waybar"
-mkdir -p "$HOME/.config/mako"
-mkdir -p "$HOME/.config/kitty"
-mkdir -p "$HOME/.config/nwg-look"
+rm -rf "$HOME/.config/waybar"
+rm -rf "$HOME/.config/mako"
+rm -rf "$HOME/.config/kitty"
+rm -rf "$HOME/.config/nwg-look"
 
-cp -r waybar/* "$HOME/.config/waybar"
-cp -r mako/* "$HOME/.config/mako"
-cp -r kitty/* "$HOME/.config/kitty"
+cd myconfig/
+mv waybar/ "$HOME/.config/waybar"
+cp mako/ "$HOME/.config/mako"
+cp kitty/ "$HOME/.config/kitty"
 
 rm "$HOME/.config/hypr/hyprland.conf"
-cp -r hypr/* "$HOME/.config/hypr"
+mv hypr/ "$HOME/.config/hypr"
 
-cp -r nwg-look/* "$HOME/.config/nwg-look"
+mv nwg-look/ "$HOME/.config/nwg-look"
 
-cd "$HOME" 
+cd ..
+
+sudo pacman -S ttf-jetbrains-mono-nerd
 
 git clone https://github.com/vinceliuice/Graphite-gtk-theme.git
 cd Graphite-gtk-theme
 chmod +x install.sh
 ./install.sh -c dark -s standard -s compact -l --tweaks black rimless 
-rm install.sh
 
-cd "$HOME" 
+cd ..
 
 yay -S bibata-cursor-theme-bin
 yay -S papirus-icon-theme
