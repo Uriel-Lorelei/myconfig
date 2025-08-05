@@ -36,13 +36,15 @@ cd myconfig
 mkdir -p "$HOME/.config/waybar"
 mkdir -p "$HOME/.config/mako"
 mkdir -p "$HOME/.config/kitty"
-mkdir -p "$HOME/.config/hypr"
 mkdir -p "$HOME/.config/nwg-look"
 
 cp -r waybar/* "$HOME/.config/waybar"
 cp -r mako/* "$HOME/.config/mako"
 cp -r kitty/* "$HOME/.config/kitty"
+
+rm "$HOME/.config/hypr/hyprland.conf"
 cp -r hypr/* "$HOME/.config/hypr"
+
 cp -r nwg-look/* "$HOME/.config/nwg-look"
 
 cd "$HOME" 
