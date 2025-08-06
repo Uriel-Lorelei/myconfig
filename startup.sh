@@ -64,6 +64,7 @@ cp -r "$MYCONFIG/hypr" "$CONFIG_DIR/"
 cp -r "$MYCONFIG/nwg-look" "$CONFIG_DIR/"
 cp -r "$MYCONFIG/wofi" "$CONFIG_DIR/"
 cp -r "$MYCONFIG/fastfetch" "$CONFIG_DIR/"
+cp "$MYCONFIG/anime-girl5.jpg" "$HOME/Pictures"
 
 slow_echo "replacement over"
 
