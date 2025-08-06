@@ -28,7 +28,7 @@ install_if_missing mesa hyprland wayland imagemagick base-devel wl-clip-persist 
 cd
 
 MYCONFIG="$HOME/myconfig"
-WALLPAPER="$MYCONFIG/mountain.png"
+WALLPAPER="$MYCONFIG/escape_velocity.jpg"
 CONFIG_DIR="$HOME/.config"
 
 if ! command -v yay &> /dev/null; then
