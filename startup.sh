@@ -63,6 +63,7 @@ cp -r "$MYCONFIG/kitty" "$CONFIG_DIR/"
 cp -r "$MYCONFIG/hypr" "$CONFIG_DIR/"
 cp -r "$MYCONFIG/nwg-look" "$CONFIG_DIR/"
 cp -r "$MYCONFIG/wofi" "$CONFIG_DIR/"
+cp -r "$MYCONFIG/fastfetch" "$CONFIG_DIR/"
 
 slow_echo "replacement over"
 
