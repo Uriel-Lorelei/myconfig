@@ -23,7 +23,7 @@ install_if_missing() {
 
 slow_echo "initializing the corruption process . . . . . . . . . . . . . . "
 
-install_if_missing mesa hyprland wayland imagemagick base-devel wl-clip-persist tlp zip unzip polkit tar xdg-user-dirs xdg-user-dirs-gtk fzf tmux htop btop libreoffice-fresh audacious cava xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk gvfs wl-clipboard kitty wofi waybar thunar swww nwg-look power-profiles-daemon mako network-manager-applet mpv feh code pipewire pipewire-pulse pipewire-alsa alsa-utils wireplumber pavucontrol brightnessctl ufw bluez bluez-utils blueman hyprlock noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-liberation ttf-dejavu hypridle
+install_if_missing mesa hyprland wayland imagemagick base-devel wl-clip-persist zip unzip polkit tar xdg-user-dirs xdg-user-dirs-gtk fzf tmux htop btop libreoffice-fresh audacious cava xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk gvfs wl-clipboard kitty wofi waybar thunar swww nwg-look power-profiles-daemon mako network-manager-applet mpv feh code pipewire pipewire-pulse pipewire-alsa alsa-utils wireplumber pavucontrol brightnessctl ufw bluez bluez-utils blueman hyprlock noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-liberation ttf-dejavu hypridle
 
 cd
 
